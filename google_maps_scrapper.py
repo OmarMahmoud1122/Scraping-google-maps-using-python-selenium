@@ -63,4 +63,4 @@ hospital_names_correct = [get_display(reshape(i)) for i in hospital_name]
 data = pd.DataFrame({'Hospital_Name':hospital_names_correct,'Link':links,'Telephone':number})
 data.index = data.index + 1
 print(data)
-data.to_csv(r'C:\Users\omars\OneDrive\Desktop\hospitals.xlsx')
+data.to_csv(r'C:\Users\omars\OneDrive\Desktop\hospitals.csv')
