@@ -38,7 +38,6 @@ x = driver.find_element(By.TAG_NAME,'input')
 x.send_keys('hospitals in alexandria')
 x.send_keys(Keys.RETURN)
 time.sleep(10)
-driver.save_screenshot(r"C:\Users\omars\OneDrive\Desktop\screen.png")
 
 ff = driver.find_element(By.XPATH,'//div[@jstcache = "3"]')
 after = 1
@@ -63,4 +62,4 @@ hospital_names_correct = [get_display(reshape(i)) for i in hospital_name]
 data = pd.DataFrame({'Hospital_Name':hospital_names_correct,'Link':links,'Telephone':number})
 data.index = data.index + 1
 print(data)
-data.to_csv(r'C:\Users\omars\OneDrive\Desktop\hospitals.csv')
+data.to_csv(r'')
