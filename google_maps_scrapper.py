@@ -35,7 +35,7 @@ driver.get('https://www.google.com/maps/')
 driver.set_window_size(1024, 600)
 driver.maximize_window()
 x = driver.find_element(By.TAG_NAME,'input')
-x.send_keys('hospitals in alexandria')
+x.send_keys('hospitals in alexandria')  #text to search for
 x.send_keys(Keys.RETURN)
 time.sleep(10)
 
