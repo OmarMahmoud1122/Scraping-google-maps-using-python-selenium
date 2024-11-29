@@ -46,7 +46,6 @@ while after > before:
     before = len(ff.find_elements(By.XPATH,'//a[@class = "hfpxzc"]'))
     ActionChains(driver).send_keys_to_element(ff,Keys.END).perform()
     time.sleep(8)
-    driver.save_screenshot(r'C:\Users\omars\OneDrive\Desktop\screenss.png')
     after = len(ff.find_elements(By.XPATH,'//a[@class = "hfpxzc"]'))
 
 details = ff.find_elements(By.XPATH,'//div[@class = "lI9IFe "]')
